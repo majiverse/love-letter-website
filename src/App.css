@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+/* Add this to your CSS file */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heart {
+  font-size: 4rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+button {
+  background-color: transparent; /* Set background color to transparent */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Show cursor as pointer when hovering */
+  outline: none; /* Remove outline */
+}
