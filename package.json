@@ -1,8 +1,16 @@
 {
   "name": "love-letter-website",
   "version": "0.1.0",
+  "source": "src/index.html",
   "homepage": "https://github.com/majiverse/love-letter-website",
   "private": true,
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "build-gh": "parcel build --public-url 'https://majiverse.github.io/love-letter-website'",
+    "predeploy": "npm run build-gh",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
