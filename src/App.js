@@ -1,14 +1,17 @@
-import heart from './heart.svg';
+// App.js
+import React from 'react';
 import './App.css';
+import LetterPage from './LetterPage';
+import CameraPage from './CameraPage';
+import GiftPage from './GiftPage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button> <img src={heart} className="App-logo" alt="logo" /></button>
-       
-        <p>hihi</p>
-        
+        <LetterPage />
+        <CameraPage />
+        <GiftPage />
       </header>
     </div>
   );
